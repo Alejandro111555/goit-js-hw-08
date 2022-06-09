@@ -12,7 +12,7 @@ function onFormSubmit(event) {
 }
 
 function onTextAreaInput(event) {
-    const message = event.currentTarget.value;
+    let message = event.currentTarget.value;
     console.log(message);
-    localStorage.getItem('feedback-form-state',message);
+    localStorage.setItem('feedback-form-state',message);
 }
