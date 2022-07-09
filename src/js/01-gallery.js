@@ -1,16 +1,11 @@
-// Add imports above this line
+// Зробити галерею використовуючи бібліотеку SimpleLightbox як залежність проекту використовуючи npm
+
+
 import { galleryItems } from './gallery-items';
-// Change code below this line
-// Описан в документации
 import SimpleLightbox from "simplelightbox";
-// Дополнительный импорт стилей
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
-console.log(galleryItems);
-
 const galleryWrapper = document.querySelector('.gallery');
-
 
 const imgList = galleryItems.map(({preview,description,original})=> `<a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" /> </a> `).join('');

@@ -1,3 +1,6 @@
+// Напиши скрипт который будет сохранять значения полей в локальное хранилище когда пользователь что-то печатает.
+
+
 import throttle from "lodash.throttle";
 
 const formRef = document.querySelector('.feedback-form');
